@@ -6,7 +6,7 @@
 
 1.1. [Возможности JavaScript в браузере.](./1.1_JavaScript_in_the_browser);
 
-1.2. [Объект события.](./1.2_event_object.)
+1.2. [Объект события.](./1.2_event_object)
 
 ### Блок 2. Работа с DOM
 
