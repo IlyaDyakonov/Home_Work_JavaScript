@@ -5,7 +5,13 @@ const click_lost = document.getElementById("lost");
     let click_win = 0,
         click_lose = 0;
 
-    // Добавляем обработчик клика по дырке
+        const resetZero = () => {
+            click_win = 0;
+            click_lose = 0;
+            click_dead.innerText = click_win;
+            click_lost.innerText = click_lose;
+        };
+
     const holes = document.querySelectorAll('.hole');
     holes.forEach((hole, index) => {
         hole.addEventListener('click', () => {
@@ -15,10 +21,7 @@ const click_lost = document.getElementById("lost");
                 if (click_win === 10) {
                     alert("Победа!");
                     stop();
-                    click_win = 0;
-                    click_lose = 0;
-                    click_dead.innerText = click_win;
-                    click_lost.innerText = click_lose;
+                    resetZero();
                 }
             } else {
                 click_lose++;
@@ -26,13 +29,9 @@ const click_lost = document.getElementById("lost");
                 if (click_lose === 5) {
                     alert("Вы проиграли!");
                     stop();
-                    click_win = 0;
-                    click_lose = 0;
-                    click_dead.innerText = click_win;
-                    click_lost.innerText = click_lose;
+                    resetZero();
                 }
             }
         });
     });
-    next();
-})();
+});
