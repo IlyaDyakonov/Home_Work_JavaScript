@@ -10,7 +10,9 @@
 
 ### Блок 2. Работа с DOM
 
-2.1. 
+2.1. [DOM](./1_HW__JavaScript_the_basics_of_working_in_the_browser/2.1_DOM)
+
+2.2. 
 
 ## II JavaScript: углубленный курс веб-разработки
 ___
