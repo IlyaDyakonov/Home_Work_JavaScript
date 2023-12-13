@@ -19,24 +19,6 @@ class Game {
     }
 
     registerEvents() {
-        let timerValue = 5;
-        let timerInterval;
-
-        const interval = () => {
-            clearInterval(timerInterval);
-            timerValue = 5;
-            timerInterval = setInterval(updateTimer, 1000);
-        }
-
-        const updateTimer = () => {
-            timerValue -= 1;
-            this.timerElement.textContent = timerValue;
-            if (timerValue <= 0) {
-                this.fail();
-                interval();
-            }
-        }
-
         const onKey = (e) => {
             const cur = this.currentSymbol;
             if (cur.textContent.toLowerCase() == e.key.toLowerCase()) {
@@ -45,19 +27,10 @@ class Game {
                 this.fail();
             }
         };
-
-        timerInterval = setInterval(updateTimer, 1000);
+    
         document.addEventListener("keydown", (e) => {
             onKey(e);
-            interval();
         });
-        /*
-            TODO:
-            Написать обработчик события, который откликается на каждый введённый символ.
-            В случае правильного ввода слова вызываем this.success()
-            При неправильном вводе символа - this.fail();
-            DOM-элемент текущего символа находится в свойстве this.currentSymbol.
-         */
     }
 
     success() {
