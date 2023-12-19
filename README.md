@@ -12,7 +12,13 @@
 
 2.1. [DOM](./1_HW__JavaScript_the_basics_of_working_in_the_browser/2.1_DOM)
 
-2.2. 
+2.2. [Изменение структуры HTML-документа.](./1_HW__JavaScript_the_basics_of_working_in_the_browser/2.2_Changing_HTML_document_structure)
+
+### Блок 3. Работа с состоянием
+
+3.1. 
+
+3.2. 
 
 ## II JavaScript: углубленный курс веб-разработки
 ___
