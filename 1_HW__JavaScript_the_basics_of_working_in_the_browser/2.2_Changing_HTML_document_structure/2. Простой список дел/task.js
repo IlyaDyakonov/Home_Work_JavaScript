@@ -1,26 +1,28 @@
-const tasks_input = document.querySelector(".tasks__input");
-const task_list = document.querySelector(".tasks__list");
-const task_remove = document.querySelector(".task__remove");
-const task_add = document.querySelector(".tasks__add");
+const tasksInput = document.querySelector(".tasks__input");
+const taskList = document.querySelector(".tasks__list");
+const taskRemove = document.querySelector(".task__remove");
+const taskAdd = document.querySelector(".tasks__add");
 
-task_add.addEventListener('click', () => {
-    const text = tasks_input.value;
+taskAdd.addEventListener('click', (e) => {
+    e.preventDefault();
+    const text = tasksInput.value;
 
-    const div_task = document.createElement('div');
-    div_task.className = 'task';
+    const divTask = document.createElement('div');
+    divTask.className = 'task';
 
-    const div_task_title = document.createElement('div');
-    div_task_title.className = 'task__title';
-    div_task_title.textContent = text;
-    div_task.appendChild(div_task_title);
+    const divTaskTitle = document.createElement('div');
+    divTaskTitle.className = 'task__title';
+    divTaskTitle.textContent = text;
+    divTask.appendChild(divTaskTitle);
 
     const remove = document.createElement('a');
     remove.href = "#";
     remove.className = 'task__remove';
     remove.innerHTML = "&times";
-    remove.addEventListener('click', () => div_task.remove());
-    div_task.appendChild(remove);
 
-    task_list.appendChild(div_task);
-    tasks_input.value = "";
+    remove.addEventListener('click', () => divTask.remove());
+    divTask.appendChild(remove);
+
+    taskList.appendChild(divTask);
+    tasksInput.value = "";
 });
