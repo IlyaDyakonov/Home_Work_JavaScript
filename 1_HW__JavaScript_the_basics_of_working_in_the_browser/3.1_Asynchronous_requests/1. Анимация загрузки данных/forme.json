@@ -1,0 +1,29 @@
+{
+    "date": "2019-02-18 14:30:56",
+    "response": {
+        "Date": "2019-02-19T11:30:00+03:00",
+        "PreviousDate": "2019-02-16T11:30:00+03:00",
+        "PreviousURL": "//www.cbr-xml-daily.ru/archive/2019/02/16/daily_json.js",
+        "Timestamp": "2019-02-18T17:00:00+03:00",
+        "Valute": {
+            "AUD": {
+                "ID": "R01010",
+                "NumCode": "036",
+                "CharCode": "AUD",
+                "Nominal": 1,
+                "Name": "Австралийский доллар",
+                "Value": 47.3467,
+                "Previous": 47.2801
+            },
+            "AZN": {
+                "ID": "R01020A",
+                "NumCode": "944",
+                "CharCode": "AZN",
+                "Nominal": 1,
+                "Name": "Азербайджанский манат",
+                "Value": 39.0492,
+                "Previous": 39.3188
+            }
+        }
+    }
+}
