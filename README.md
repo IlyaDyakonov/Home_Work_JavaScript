@@ -16,9 +16,9 @@
 
 ### Блок 3. Работа с состоянием
 
-3.1. 
+3.1. [Асинхронные запросы](./1_HW__JavaScript_the_basics_of_working_in_the_browser/3.1_Asynchronous_requests)
 
-3.2. 
+3.2. [Хранение состояния на клиенте и отправка на сервер](./1_HW__JavaScript_the_basics_of_working_in_the_browser/3.2_Storing_status_client__sending_server)
 
 ## II JavaScript: углубленный курс веб-разработки
 ___
